@@ -23,3 +23,42 @@
  header h1 {
    font-size: 2.5rem;
  }
+
+ /* Pseudoelemento ::after en el título */
+ header h1::after {
+   content: " ☕";
+   font-size: 2rem;
+ }
+
+ /* MAIN */
+ main {
+   max-width: 900px;
+   margin: 2rem auto;
+   padding: 0 1rem;
+ }
+
+ /* SECTION */
+ section {
+   background-color: white;
+   margin-bottom: 2rem;
+   padding: 2rem;
+   border-radius: 8px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ section h2 {
+   color: #6f4e37;
+   margin-bottom: 1rem;
+   border-bottom: 2px solid #d2691e;
+   padding-bottom: 0.5rem;
+ }
+
+ /* Pseudoelemento ::first-letter */
+ section p::first-letter {
+   font-size: 2em;
+   font-weight: bold;
+   color: #d2691e;
+   float: left;
+   margin-right: 5px;
+   line-height: 1;
+ }
