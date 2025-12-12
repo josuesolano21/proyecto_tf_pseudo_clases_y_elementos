@@ -149,3 +149,35 @@
     .beneficios li:nth-child(even) {
       background-color: #fff9f0;
     }
+
+            .beneficios {
+              list-style: none;
+              padding: 0;
+            }
+      
+            .beneficios li {
+              padding: 0.8rem;
+              margin: 0.5rem 0;
+              border-radius: 5px;
+            }
+      
+            /* FOOTER */
+            footer {
+              background-color: #333;
+              color: white;
+              text-align: center;
+              padding: 1.5rem;
+              margin-top: 2rem;
+            }
+      
+            footer p {
+              margin: 0.5rem 0;
+            }
+      
+            /* Pseudoelemento ::before en footer */
+            footer::before {
+              content: "━━━━━━━━━━━━━━━━━━";
+              display: block;
+              color: #6f4e37;
+              margin-bottom: 1rem;
+            }
