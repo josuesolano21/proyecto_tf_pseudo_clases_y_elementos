@@ -62,3 +62,90 @@
    margin-right: 5px;
    line-height: 1;
  }
+
+    /* ARTICLE - Lista de tipos de café */
+    article {
+      margin-top: 1.5rem;
+    }
+  
+    article h3 {
+      color: #8b4513;
+      margin-bottom: 0.5rem;
+    }
+  
+    /* Lista de cafés */
+    .lista-cafes {
+      list-style: none;
+      padding: 0;
+    }
+  
+    .lista-cafes li {
+      background-color: #f9f9f9;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border-left: 4px solid #d2691e;
+      transition: all 0.3s ease;
+    }
+  
+    /* Pseudoclase :hover */
+    .lista-cafes li:hover {
+      background-color: #fff4e6;
+      border-left: 4px solid #6f4e37;
+      transform: translateX(5px);
+    }
+  
+    /* Pseudoclase :first-child */
+    .lista-cafes li:first-child {
+      border-left-color: #FFD700;
+      font-weight: bold;
+    }
+  
+    /* Pseudoelemento ::before para agregar iconos */
+    .lista-cafes li::before {
+      content: "☕ ";
+      margin-right: 8px;
+    }
+  
+    /* Botón de contacto */
+    .boton-contacto {
+      display: inline-block;
+      background-color: #6f4e37;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+  
+    /* Pseudoclases :hover y :active en botón */
+    .boton-contacto:hover {
+      background-color: #8b4513;
+    }
+  
+    .boton-contacto:active {
+      background-color: #5a3825;
+      transform: scale(0.98);
+    }
+  
+    /* Input con :focus */
+    input[type="email"] {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 1rem 0;
+      border: 2px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+  
+    /* Pseudoclase :focus */
+    input[type="email"]:focus {
+      outline: none;
+      border-color: #6f4e37;
+      box-shadow: 0 0 5px rgba(111, 78, 55, 0.3);
+    }
+  
+    /* Pseudoclase :nth-child() - colorear items alternados */
+    .beneficios li:nth-child(even) {
+      background-color: #fff9f0;
+    }
